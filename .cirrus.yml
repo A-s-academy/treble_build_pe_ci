@@ -54,5 +54,5 @@ task:
       - export USE_CCACHE=1
       - export CCACHE_EXEC=/usr/bin/ccache
       - ccache -M 150G
-  Build_script:
       - . treble_build_pe/build.sh thirteen
+      
