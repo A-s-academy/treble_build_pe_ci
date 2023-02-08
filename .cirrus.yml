@@ -32,15 +32,7 @@ task:
       - echo "Syncing The Sources..."
       - echo "============================"
       - sudo apt-get update
-      # Add repo tool manually
-
-      - curl https://storage.googleapis.com/git-repo-downloads/repo > repo
-
-      - chmod a+x repo
-
-      - PATH=$PATH:$PWD
-
-      - export PATH
+      
       - mkdir -p ~/pixel
       - cd ~/pixel
       - git clone https://github.com/A-s-academy/treble_build_pe -b thirteen 
